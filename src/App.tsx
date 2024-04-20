@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect, createContext } from 'react';
+import axios from 'axios';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { Navbar } from "./pages/Navbar.js";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {Home} from './pages/Home'
+
+
+
+
+
+
 
 function App() {
+  const client = new QueryClient({defaultOptions:{
+    queries: {
+      refetchOnWindowFocus: false,
+    }
+  }});
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <QueryClientProvider client={client}>
+        <Router>
+          <Navbar /> 
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="*" element={<h1>ERROR</h1>}/>
+          </Routes>
+        </Router>
+      </QueryClientProvider>
     </div>
   );
 }
