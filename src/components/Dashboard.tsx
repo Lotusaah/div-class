@@ -33,17 +33,20 @@ function classNames(...classes: any) {
 export const Dashboard = () => {
   const location = useLocation();
   const [pageTitle, setPageTitle] = useState('');
-  const [hoverFeature, setHoverFeature] = useState(Boolean);
-
-  //useEffect(() => {
-  //  const currentNavSelection = navigation.find(item => item.href === location.)
-  //})
 
   useEffect(() => {
     const currentNavItem = navigation.find(item => item.href === location.pathname);
     setPageTitle(currentNavItem ? currentNavItem.title : 'Default Page Title');
   }, [location]);
-  
+
+  navigation.forEach((nav) => {if (nav.title === pageTitle) {
+    nav.current = true;
+  } else {
+    nav.current = false;
+  }
+  });
+
+
   return (
     <>
       {/*
@@ -61,7 +64,7 @@ export const Dashboard = () => {
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 lg:pr-72">
                       <Link to="/">
                         <img
                           className="h-8 w-8 filter transition-filter duration-300 hover:drop-shadow-glow"
@@ -79,8 +82,8 @@ export const Dashboard = () => {
                             className={classNames(
                               item.current
                                 ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                                : 'text-gray-900 bg-accent hover:bg-gray-700 hover:text-white',
+                              'rounded-md px-3 py-2 text-sm font-medium duration-300 hover:drop-shadow-glow transition-all'
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
@@ -118,7 +121,7 @@ export const Dashboard = () => {
                       href={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block rounded-md px-3 py-2 text-base font-medium'
+                        'block rounded-md px-3 py-2 text-base font-medium duration-300 hover:stack-shadow-glow transition-all'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >

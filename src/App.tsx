@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {useState, useEffect, createContext, Fragment } from 'react';
 import axios from 'axios';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
@@ -30,7 +29,7 @@ function App() {
   }});
 
   return (
-    <div className="App flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
        <QueryClientProvider client={client}>
         <Router>
           <Routes>
