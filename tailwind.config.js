@@ -15,6 +15,9 @@ module.exports = {
       stackShadow: {
         'glow': '0 0 5px rgba(255, 255, 255, 0.5)',
       },
+      blackShadow: {
+        'glow': '0 0 5px rgba(0, 0, 0, 0.5)',
+      },
       transitionProperty: {
         'height': 'height',
         'spacing': 'margin, padding',

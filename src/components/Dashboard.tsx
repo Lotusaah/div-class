@@ -15,13 +15,12 @@ type NavigationItem = {
 const navigation: NavigationItem[] = [
   { name: 'P', href: '/', current: true, title: 'Positionality'},
   { name: 'R', href: '/Race', current: true, title: 'Race'},
-  { name: 'E', href: '/Ethnicity', current: true, title: 'Ethnicity'},
-  { name: 'N-O', href: '/National-Origin', current: true, title: 'National Origin'},
-  { name: 'S', href: '/Sex', current: true, title: 'Sex'},
   { name: 'G', href: '/Gender', current: true, title: 'Gender'},
   { name: 'S-O', href: '/Sexual-Orientation', current: true, title: 'Sexual Orientation'},
+  { name: 'T-I', href: '/Transgender-Identities', current: true, title: 'Transgender Identities'},
   { name: 'C', href: '/Class', current: true, title: 'Class'},
-  { name: 'D', href: '/Disability', current: true, title: 'Disability'},
+  { name: 'A', href: '/Ability', current: true, title: 'Ability'},
+  { name: 'N-O', href: '/National-Origin', current: true, title: 'National Origin'},
   { name: 'R', href: '/Religion', current: true, title: 'Religion'},
 ]
 
@@ -36,7 +35,7 @@ export const Dashboard = () => {
 
   useEffect(() => {
     const currentNavItem = navigation.find(item => item.href === location.pathname);
-    setPageTitle(currentNavItem ? currentNavItem.title : 'Default Page Title');
+    setPageTitle(currentNavItem ? currentNavItem.title : 'ERROR PAGE');
   }, [location]);
 
   navigation.forEach((nav) => {if (nav.title === pageTitle) {

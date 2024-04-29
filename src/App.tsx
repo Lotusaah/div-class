@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import {useState, useEffect, createContext, Fragment } from 'react';
 import axios from 'axios';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
@@ -10,15 +11,15 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {Positionality} from './pages/Positionality'
 import {Dashboard} from './components/Dashboard';
 import {Race} from './pages/Race';
-import {Ethnicity} from './pages/Ethnicity';
+import {Transgenderidentities} from './pages/Transgenderidentites';
 import {Nationalorigin} from './pages/Nationalorigin';
 import {Sex} from './pages/Sex';
 import {Gender} from './pages/Gender';
 import {Sexualorientation} from './pages/Sexualorientation';
 import {Class} from './pages/Class';
-import {Disability} from './pages/Disability';
+import {Ability} from './pages/Ability';
 import {Religion} from './pages/Religion';
-
+import {Error} from './components/Error';
 
 
 function App() {
@@ -35,16 +36,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Positionality />}/>
             <Route path="/Race" element={<Race />}/>
-            <Route path="/Ethnicity" element={<Ethnicity />}/>
-            <Route path="/National-Origin" element={<Nationalorigin />}/>
-            <Route path="/Sex" element={<Sex />}/>
             <Route path="/Gender" element={<Gender />}/>
             <Route path="/Sexual-Orientation" element={<Sexualorientation />}/>
+            <Route path="/Transgender-Identities" element={<Transgenderidentities />}/>
             <Route path="/Class" element={<Class />}/>
-            <Route path="/Disability" element={<Disability />}/>
+            <Route path="/Ability" element={<Ability />}/>
+            <Route path="/National-Origin" element={<Nationalorigin />}/>
             <Route path="/Religion" element={<Religion />}/>
-            <Route path="*" element={<h1>ERROR</h1>}/>
+            <Route path="*" element={<Error />}/>
           </Routes>
+          <Footer />
         </Router>
       </QueryClientProvider>
     </div>

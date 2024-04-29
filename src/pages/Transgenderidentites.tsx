@@ -1,7 +1,7 @@
 import {Dashboard} from '../components/Dashboard';
 import {Bodyoftext} from '../components/Bodyoftext';
 
-export const Disability = () => {
+export const Transgenderidentities = () => {
   return (
     <div>
       <Dashboard />
