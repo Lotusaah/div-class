@@ -2,13 +2,10 @@ import React from 'react';
 
 // Define the structure of the textData object
 interface TextData {
-  definition: string;
-  whatLearned: string;
-  situation: string;
-  step1: string;
-  step2: string;
-  step3: string;
-  step4: string;
+  definition: JSX.Element;
+  whatLearned: JSX.Element;
+  situation: JSX.Element;
+  steps: JSX.Element;
 }
 
 // Define the props type for the BodyOfText component
@@ -44,12 +41,7 @@ export const Bodyoftext: React.FC<BodyoftextProps> = ({ textData }) => {
         <h1 className="font-bold text-xl mb-4">Steps to Resolution:</h1>
         <div className="space-y-4">
           <div className="p-4 border border-gray-300 rounded">
-            <ul className="list-disc pl-5">
-              <li>{textData.step1}</li>
-              <li>{textData.step2}</li>
-              <li>{textData.step3}</li>
-              <li>{textData.step4}</li>
-            </ul>
+           {textData.steps}
          </div>
         </div>
       </div>

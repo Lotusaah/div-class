@@ -5,15 +5,12 @@ import axios from 'axios';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Navbar } from "./pages/Navbar";
 import {Footer} from "./pages/Footer";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {Positionality} from './pages/Positionality'
-import {Dashboard} from './components/Dashboard';
 import {Race} from './pages/Race';
 import {Transgenderidentities} from './pages/Transgenderidentites';
 import {Nationalorigin} from './pages/Nationalorigin';
-import {Sex} from './pages/Sex';
 import {Gender} from './pages/Gender';
 import {Sexualorientation} from './pages/Sexualorientation';
 import {Class} from './pages/Class';
