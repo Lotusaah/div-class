@@ -22,6 +22,7 @@ const navigation: NavigationItem[] = [
   { name: 'A', href: '/Ability', current: true, title: 'Ability'},
   { name: 'N-O', href: '/National-Origin', current: true, title: 'National Origin'},
   { name: 'R', href: '/Religion', current: true, title: 'Religion'},
+  { name: 'C', href: '/Conclusion', current: true, title: 'Conclusion'},
 ]
 
 

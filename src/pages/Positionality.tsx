@@ -49,7 +49,7 @@ export const Positionality = () => {
         <div className="pt-4">
           <h1 className="font-bold text-xl mb-4">My identity growth:</h1>
           <div className="space-y-4">
-            <div className="p-4 border border-gray-300 hover:shadow-lg transition-all duration-700">I have been more intuitive when it comes to viewing the situations I am in from different perspectives. I am constantly identifying my biases and diminishing them. And I have been more accepting of others and my own identity.</div>
+            <div className="p-4 border border-gray-300 rounded hover:shadow-lg transition-all duration-700">I have been more intuitive when it comes to viewing the situations I am in from different perspectives. I am constantly identifying my biases and diminishing them. And I have been more accepting of others and my own identity.</div>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const Ability = () => {
     ),
     whatLearned: (<div> People all around the world work in unisons to have societies and economies constantly flowing, so how do disable individuals fit into this system. Short answer they fit in just fine. As Stella Young said they are normal people and not an inspiration. There is a stigma that being disabled hinders the ability to work all together and they need to be taken care of. Of course they have their limits as well as most able body individuals. As a leader inclusivity is important due to community values from the Social Change Model, and without every single person there cannot be a complete community. So how do you connect with these individuals with disabilities? It is simple talk to them, of course, the community needs to come to their aid to provide the support for them to commit their daily lives like automatic doors, elevators, cross walks, sidewalk bumps and more. As a leader, treating these people as normal individuals rather than as less of a person that needs to be taken care of, will promote the idea of equals and diminish ableism.<div className="relative pb-[56.25%] h-0 overflow-hidden">
     <iframe 
-      className="pt-5 absolute top-0 left-0 w-full h-full"
+      className="pt-5 absolute top-0 left-0 w-full h-full rounded"
       src="https://www.youtube.com/embed/DTwFFuCXyGk?si=UPtQTSRNTL0Kx_8O" 
       title="YouTube video player" 
       frameBorder="0"

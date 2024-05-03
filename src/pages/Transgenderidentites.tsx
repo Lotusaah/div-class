@@ -15,7 +15,7 @@ export const Transgenderidentities = () => {
     ),
     whatLearned: (<div>For people who may not know and for my seventh-grade self, there is a difference between sexual orientation and gender identity. Similar to sexual orientation there are many different genders, and gender identity is different for each and every person. Philosopher and Author, Simone de Beauvoir, wrote “The Second Sex” in 1940s where it opened up the idea that there is a difference between gender and your assigned sex. Gayle Rubin, a renowned Anthropologist, put forth the idea that gender is grown into normalization with social pressure and is able to be cultivated into what you want without the influences around you. This piece of literature is crucial for the acceptance of trans gender identities because it publicized the idea to an imaginable sense. According to the leadership social change model (An Overview of the Social Change Model of Leadership Development) it is important to be a citizen in the community you are a part of, and today I do not see that happening to the best of its ability. There is always room for growth and the acceptance and normalization of transgender identities will improve every society today for the betterment of today and our future generations. <div className="relative pb-[56.25%] h-0 overflow-hidden">
     <iframe 
-      className="pt-5 absolute top-0 left-0 w-full h-full"
+      className="pt-5 absolute top-0 left-0 w-full h-full rounded"
       src="https://www.youtube.com/embed/MitqjSYtwrQ?si=p2gsORfwHHRJqRek" 
       title="YouTube video player" 
       frameBorder="0"

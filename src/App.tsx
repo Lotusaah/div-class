@@ -17,6 +17,8 @@ import {Class} from './pages/Class';
 import {Ability} from './pages/Ability';
 import {Religion} from './pages/Religion';
 import {Error} from './components/Error';
+import {Conclusion} from './pages/Conclusion';
+
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
             <Route path="/Ability" element={<Ability />}/>
             <Route path="/National-Origin" element={<Nationalorigin />}/>
             <Route path="/Religion" element={<Religion />}/>
+            <Route path="/Conclusion" element={<Conclusion />}/>
             <Route path="*" element={<Error />}/>
           </Routes>
           <Footer />

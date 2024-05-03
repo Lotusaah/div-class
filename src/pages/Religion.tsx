@@ -19,7 +19,7 @@ export const Religion = () => {
     ),
     whatLearned: (<div>Religion is often a core aspect of an individual's identity, deeply influencing their morals and beliefs. In a leadership role, understanding and respecting religious diversity is crucial to fostering an inclusive environment where everyone is respected. One major issue is antisemitism, which is not just historical but present today, often subtly issued into societal narratives and biases. It's essential to challenge these narratives and educate others about the contributions and history of Jewish people to counteract this deeply ingrained prejudice. Similarly, Islamophobia is a significant problem, characterized by irrational fear and hostility towards Muslims. This often stems from stereotypes perpetuated by media and popular culture. As a leader, it's important to challenge these stereotypes and promote a more nuanced understanding of Islam and its followers. Effective leadership involves creating spaces where religious discussions can occur without fear of discrimination or hostility. This means actively listening, encouraging dialogue among different religious groups, and addressing any signs of religious intolerance decisively.<div className="relative pb-[56.25%] h-0 overflow-hidden">
     <iframe 
-      className="pt-5 absolute top-0 left-0 w-full h-full"
+      className="pt-5 absolute top-0 left-0 w-full h-full rounded"
       src="https://www.youtube.com/embed/QjYcUU8L1vo?si=_fUwitBHw3fSeTeQ" 
       title="YouTube video player" 
       frameBorder="0"
@@ -28,7 +28,7 @@ export const Religion = () => {
     ></iframe>
 </div><div className="relative pb-[56.25%] h-0 overflow-hidden">
     <iframe 
-      className="pt-5 absolute top-0 left-0 w-full h-full"
+      className="pt-5 absolute top-0 left-0 w-full h-full rounded"
       src="https://www.youtube.com/embed/77_FbrWTugg?si=j5Sa4RnPZPglY-5P" 
       title="YouTube video player" 
       frameBorder="0"
