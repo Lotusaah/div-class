@@ -57,7 +57,7 @@ export const Dashboard = () => {
         ```
       */}
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-brand-blue shadow">
+        <Disclosure as="nav" className="bg-brand-blue">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -133,9 +133,9 @@ export const Dashboard = () => {
           )}
         </Disclosure>
 
-        <header className="bg-secondary shadow">
+        <header className="bg-secondary shadow-lg">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">{pageTitle}</h1>
+            <h1 className="text-4xl w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-white to-sky-500/10 p-2 hover:to-white hover: transition-all duration-700">{pageTitle}</h1>
           </div>
         </header>
       </div>

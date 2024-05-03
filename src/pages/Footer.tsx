@@ -3,7 +3,7 @@ export const Footer = () => {
     <div className="flex justify-between ">
       <div className="flex-2 bg-brand-blue"></div>
       <div className="flex-1 bg-brand-blue">
-        <div className="text-center font-bold">
+        <div className="text-center">
         <div className="footer-content">
         <div className="footer-section">
         </div>

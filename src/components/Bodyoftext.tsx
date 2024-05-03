@@ -22,25 +22,25 @@ export const Bodyoftext: React.FC<BodyoftextProps> = ({ textData }) => {
           <div>
             <h1 className="font-bold text-xl mb-4">Definition:</h1>
             <div className="space-y-4">
-              <div className="p-4 border border-gray-300 rounded">{textData.definition}</div>
+              <div className="p-4 border border-gray-300 rounded hover:shadow-lg transition-all duration-700">{textData.definition}</div>
             </div>
           </div>
       <div className="pt-4">
         <h1 className="font-bold text-xl mb-4">What I Learned:</h1>
         <div className="space-y-4">
-          <div className="p-4 border border-gray-300 rounded">{textData.whatLearned}</div>
+          <div className="p-4 border border-gray-300 rounded hover:shadow-lg transition-all duration-700">{textData.whatLearned}</div>
         </div>
       </div>
       <div className="pt-4">
         <h1 className="font-bold text-xl mb-4">Situation:</h1>
         <div className="space-y-4">
-          <div className="p-4 border border-gray-300 rounded">{textData.situation}</div>
+          <div className="p-4 border border-gray-300 rounded hover:shadow-lg transition-all duration-700">{textData.situation}</div>
         </div>
       </div>
       <div className="pt-4">
         <h1 className="font-bold text-xl mb-4">Steps to Resolution:</h1>
         <div className="space-y-4">
-          <div className="p-4 border border-gray-300 rounded">
+          <div className="p-4 border border-gray-300 rounded hover:shadow-lg transition-all duration-700">
            {textData.steps}
          </div>
         </div>
